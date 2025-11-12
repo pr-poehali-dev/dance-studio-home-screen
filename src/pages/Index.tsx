@@ -99,8 +99,8 @@ const Index = () => {
           <div className="relative max-w-[60%] mx-auto mb-12">
             <div className="neon-border rounded-2xl overflow-hidden">
               <img 
-                src="https://cdn.poehali.dev/projects/ef2f6466-f475-406b-91de-b491dc9de9f8/files/b7fc4956-4ef4-479a-abae-e3c2905cf3d6.jpg"
-                alt="Танцующая пара"
+                src="https://cdn.poehali.dev/projects/ef2f6466-f475-406b-91de-b491dc9de9f8/files/5a84afba-e873-43eb-839c-c9e8ea5df4a8.jpg"
+                alt="Танцующая девушка босиком"
                 className="w-full h-[500px] object-cover opacity-60 motion-blur"
               />
             </div>
