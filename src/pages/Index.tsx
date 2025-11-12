@@ -58,7 +58,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0A1428] via-[#1f1144] to-[#4A2D6A] text-white overflow-hidden relative">
+    <div className="min-h-screen bg-gradient-to-br from-[#3B2F5C] via-[#5D4B7C] to-[#9B86BD] text-white overflow-hidden relative">
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none noise-texture">
         <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <path className="dance-line stroke-white/20 fill-none" strokeWidth="2" d="M 50 200 Q 150 100, 250 200 T 450 200" />
@@ -93,22 +93,23 @@ const Index = () => {
 
       <section className="relative pt-20 pb-20 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-[56px] md:text-[56px] font-bold mb-5 text-glow animate-fadeIn" style={{ marginTop: '60px' }}>Симптом</h1>
-          <p className="text-[28px] md:text-[28px] font-light text-[#FF1493] mb-12 animate-slideUp">Танец — язык твоего тела</p>
+          <h1 className="text-[48px] md:text-[48px] font-bold mb-4 text-white animate-fadeIn" style={{ marginTop: '60px', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, textShadow: '0 0 15px rgba(255,255,255,0.3)' }}>Симптом</h1>
+          <p className="text-[24px] md:text-[24px] font-light text-[#FFB6C1] mb-12 animate-slideUp" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 300 }}>Танец — язык твоего тела</p>
           
           <div className="relative max-w-[60%] mx-auto mb-12">
             <div className="neon-border rounded-2xl overflow-hidden">
               <img 
-                src="https://cdn.poehali.dev/projects/ef2f6466-f475-406b-91de-b491dc9de9f8/files/5a84afba-e873-43eb-839c-c9e8ea5df4a8.jpg"
-                alt="Танцующая девушка босиком"
-                className="w-full h-[500px] object-cover opacity-60 motion-blur"
+                src="https://cdn.poehali.dev/projects/ef2f6466-f475-406b-91de-b491dc9de9f8/files/3ec113f7-7596-422e-99ff-c60f85623881.jpg"
+                alt="Танцующая пара силуэты"
+                className="w-full h-[500px] object-cover opacity-70 motion-blur"
               />
             </div>
           </div>
 
           <Button 
             onClick={() => scrollToSection('contact')}
-            className="w-[240px] h-[60px] bg-[#FF1493] hover:bg-[#FF1493] text-white font-medium text-[20px] rounded-[30px] border-2 border-white transition-all duration-300 hover:w-[250px] hover:h-[65px] hover:shadow-[0_6px_16px_rgba(255,20,147,0.5)] focus:outline-none focus:ring-2 focus:ring-[#FF1493] focus:ring-offset-2 active:scale-95"
+            className="w-[200px] h-[50px] bg-[#FF1493] hover:bg-[#FF1493] text-white font-medium text-[18px] rounded-md border-2 border-white transition-all duration-300 hover:scale-105 hover:shadow-[0_8px_20px_rgba(255,20,147,0.6)] focus:outline-none focus:ring-2 focus:ring-[#FF1493] focus:ring-offset-2 active:scale-95"
+            style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500, letterSpacing: '0.5px' }}
           >
             ЗАПИСАТЬСЯ
           </Button>
