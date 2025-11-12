@@ -58,12 +58,21 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1a0b2e] via-[#2d1b4e] to-[#4a2d6e] text-white overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-glow-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-2 h-24 bg-gradient-to-b from-transparent via-primary/30 to-transparent"></div>
-        <div className="absolute top-1/3 right-1/4 w-2 h-32 bg-gradient-to-b from-transparent via-secondary/30 to-transparent"></div>
+    <div className="min-h-screen bg-gradient-to-br from-[#0A1428] via-[#1f1144] to-[#4A2D6A] text-white overflow-hidden relative">
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none noise-texture">
+        <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <path className="dance-line stroke-white/20 fill-none" strokeWidth="2" d="M 50 200 Q 150 100, 250 200 T 450 200" />
+          <path className="dance-line stroke-white/20 fill-none" strokeWidth="2" d="M 600 300 Q 700 200, 800 300 T 1000 300" style={{ animationDelay: '0.5s' }} />
+          <path className="dance-line stroke-white/20 fill-none" strokeWidth="2" d="M 100 500 Q 200 400, 300 500 T 500 500" style={{ animationDelay: '1s' }} />
+        </svg>
+        
+        <div className="absolute top-10 left-5 w-8 h-8 border-l-2 border-t-2 border-white/15 rotate-45"></div>
+        <div className="absolute top-20 right-10 w-12 h-12 border-r-2 border-b-2 border-white/15 -rotate-12"></div>
+        <div className="absolute bottom-32 left-16 w-10 h-10 border-2 border-white/15 rotate-12"></div>
+        <div className="absolute bottom-20 right-20 w-16 h-2 bg-white/10"></div>
+        
+        <div className="absolute bottom-0 left-8 w-[3px] h-[60vh] bg-gradient-to-t from-white/10 via-white/5 to-transparent"></div>
+        <div className="absolute bottom-0 right-8 w-[3px] h-[70vh] bg-gradient-to-t from-white/10 via-white/5 to-transparent"></div>
       </div>
 
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -82,24 +91,24 @@ const Index = () => {
         </div>
       </nav>
 
-      <section className="relative pt-32 pb-20 px-4">
-        <div className="container mx-auto text-center animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 text-glow">Симптом</h1>
-          <p className="text-2xl md:text-3xl font-light text-[#FFB6C1] mb-12">Танец — язык твоего тела</p>
+      <section className="relative pt-20 pb-20 px-4">
+        <div className="container mx-auto text-center">
+          <h1 className="text-[56px] md:text-[56px] font-bold mb-5 text-glow animate-fadeIn" style={{ marginTop: '60px' }}>Симптом</h1>
+          <p className="text-[28px] md:text-[28px] font-light text-[#FF1493] mb-12 animate-slideUp">Танец — язык твоего тела</p>
           
-          <div className="relative max-w-3xl mx-auto mb-12 motion-blur">
-            <img 
-              src="https://cdn.poehali.dev/projects/ef2f6466-f475-406b-91de-b491dc9de9f8/files/b7fc4956-4ef4-479a-abae-e3c2905cf3d6.jpg"
-              alt="Танцующая пара"
-              className="w-full h-[400px] object-cover rounded-2xl opacity-80"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent rounded-2xl"></div>
+          <div className="relative max-w-[60%] mx-auto mb-12">
+            <div className="neon-border rounded-2xl overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/ef2f6466-f475-406b-91de-b491dc9de9f8/files/b7fc4956-4ef4-479a-abae-e3c2905cf3d6.jpg"
+                alt="Танцующая пара"
+                className="w-full h-[500px] object-cover opacity-60 motion-blur"
+              />
+            </div>
           </div>
 
           <Button 
             onClick={() => scrollToSection('contact')}
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-white font-bold text-lg px-12 py-6 rounded-full shadow-lg shadow-primary/50 hover:shadow-primary/70 hover:scale-105 transition-all border-2 border-white/20"
+            className="w-[240px] h-[60px] bg-[#FF1493] hover:bg-[#FF1493] text-white font-medium text-[20px] rounded-[30px] border-2 border-white transition-all duration-300 hover:w-[250px] hover:h-[65px] hover:shadow-[0_6px_16px_rgba(255,20,147,0.5)] focus:outline-none focus:ring-2 focus:ring-[#FF1493] focus:ring-offset-2 active:scale-95"
           >
             ЗАПИСАТЬСЯ
           </Button>
